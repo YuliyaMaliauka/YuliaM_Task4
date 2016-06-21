@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+</head>
+<body bgcolor="#BEDEDC" style = "font-family: Trebuchet MS, Regular; font-size: 16px;">
+<div class = "wraper" style = "margin: 0 auto;">
+    <div class = "hader">
+
+        <div class="box">
+		<table class = "table">
+		<tr>
+		<td>
+            <input
+				class = "btn-doc"
+				type="button"
+				value="New Document"
+				onclick="setupMessageButton('New Document!', 'Document Name')"
+			/>
+            <input
+				class = "btn-par"
+				type="button"
+				value="New Paragraph"
+				disabled ="false"
+				onclick="setupParagrafButton('New Paragraph!', 'Paragraph Name',  'Paragraph Content')"
+			/>
+            <input
+				class = "btn-save"
+				type="button"
+				value="Save"
+				disabled = "false"
+				onclick="save()"
+			/>
+		</td>
+		<td class = "title" style = "padding-left: 50px;">
+            <h1> JS in Web Browser Task 4 </h1>
+		<td>
+		</tr>
+		</table>
+        </div>
+    </div>
+    <div class="conteiner-list">
+        <div class="list">
+            <table style="width: 100%; height:100%;">
+                <tr>
+                    <td id="text" valign="top" style="width: 20%;">                       
+                        <h2>&nbsp; &nbsp; Documents</h2>
+						<p class = "newDocName" id="new-doc-name"> </p>
+                        <ul class = "newDocPar" id="new-par-name"> </ul>
+						<div style="visibility: hidden; position: absolute;" class = "newDocContent" id="new-content-name"> </div>
+                        <div id="docs"> </div>
+                    </td>
+                    <td id="text1" valign="top" style="width: 80%;">
+                       
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/modul.js"></script>
+</body>
+</html>
